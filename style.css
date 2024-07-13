@@ -102,13 +102,13 @@
     top: 50%;
     left: 50%;
     border-radius: 5px;
-    transform: translate(-50%, -50%) scale(0.8); /* Start with scale 0 */
+    transform: translate(-50%, -50%) scale(0.8); 
     border: 1px solid #ccc;
     padding: 31px 32px 25.5px 32px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     opacity: 0;
-    transition: opacity 0.8s, transform 0.8s; /* Add transition for opacity and transform */
+    transition: opacity 0.8s, transform 0.8s;
 }
 
 
@@ -150,6 +150,7 @@
     top: -25px;
     font-size: 12px;
     z-index: 1;
+    
 }
 
 
@@ -176,11 +177,11 @@
 }
 
 .checkbox-container label{
-    /* content: ""; */
+    content: "";
     display: inline-block;
     /* width: 14px;
     height: 14px;
-    border: 2px solid #ff3366; */
+    border: 2px solid #ff3147; */
     border-radius: 5px;
     margin-right: 10px;
     vertical-align: middle;
@@ -198,7 +199,7 @@
     line-height: 15px;
 } */
 input[type="checkbox"]:checked {
-    background-color: #FF3366;
+    background-color: #FF3147;
 
 }
 input[type="checkbox"]:checked:after {
@@ -222,20 +223,20 @@ input[type="checkbox"]:checked:after {
     padding: 15px 141px;
     font-size: 18px;
     font-weight: 500;
-    background-color: #ff3366;
+    background-color: #ff3147;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-#contactForm button:hover {
+/* #contactForm button:hover {
     background-color: #e6005c;
 }
 
 .no-scroll {
     overflow: hidden;
-}
+} */
 
 #firstName{
     flex-basis: 45%;
@@ -561,7 +562,7 @@ input[type="checkbox"]:checked:after {
 }
 
 
-/* ------------------------growth-stats--------------------- */
+/* ------------------------growth_stats--------------------- */
 
 
 #stats{
@@ -593,6 +594,55 @@ input[type="checkbox"]:checked:after {
 .stats p{
     font-size: 20px;
     font-weight: 300;
+}
+
+/* --------------------feedback----------------------- */
+
+#feedback{
+    background: #ffffff;
+    color: black;
+    padding: 100px 0;
+}
+
+.feed-parent {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-image: url(Assets/icons/Quotemarks-left.svg);
+    background-repeat: no-repeat;
+    background-size: 6%;
+    background-position-x: 150px;
+    background-position-y: 23px;
+}
+
+.feedbacks{
+    flex-basis: 70%;
+    
+}
+.feedbacks h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+.feedbacks span{
+    color: #ff3147;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.feedbacks span:nth-of-type(2) {
+    color: #808080;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#footer{
+    background: linear-gradient(135deg, #c40031, #ff3147);
+    color: #ffffff;
+    text-align: center;
+    padding: 130px 0;
 }
 
 
